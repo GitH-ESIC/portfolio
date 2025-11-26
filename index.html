@@ -1,11 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javi - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ysabeau Infant', sans-serif;
+            background: linear-gradient(180deg, #002855 0%, #4A90C8 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 20px;
+        }
+
+        .header .logo {
+            height: 60px;
+            width: auto;
+        }
+
+        .header .header-text {
+            text-align: left;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            grid-auto-rows: minmax(250px, auto);
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .dobleAncho {
+            grid-column: span 2;
+        }
+
+        .dobleAlto {
+            grid-row: span 2;
+        }
+
+        .project-card:nth-child(6) {
+            grid-column: span 2;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project-description {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header .header-text {
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card:nth-child(1),
+            .project-card:nth-child(6) {
+                grid-column: span 1;
+            }
+
+            .project-card:nth-child(4) {
+                grid-row: span 1;
+            }
+
+            .project-card:nth-child(4) .project-image {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    Hola GITHUB ESIC
+    <header class="header">
+        <img src="./img/logo_ESIC_blanco.svg" alt="ESIC Logo" class="logo">
+        <div class="header-text">
+            <h1>ESIC University</h1>
+            <!-- <p>Desarrollador y formador apasionado por crear y enseñar experiencias digitales únicas y funcionales</p> -->
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="bento-grid">
+            <div class="project-card dobleAncho" onclick="window.location.href = 'masesic.html'">
+                <div class="project-image" style="background-image: url('./img/masesic.png');">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">MasEsic</h3>
+                    <p class="project-description">Aplicación PWA que permite a los estudiantes registrarse en las
+                        actividades de la Fundación y reciben notificaciones sobre ellas.</p>
+                </div>
+            </div>
+
+            <div class="project-card dobleAlto" onclick="window.location.href = 'sot.html'">
+                <div class="project-image" style="background-image: url('./img/sot.png');height: 550px;">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">SOT</h3>
+                    <p class="project-description">Plataforma que permite mostrar a los estudiantes como se puede crear
+                        una web paso a paso.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
 </body>
+
 </html>
