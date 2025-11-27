@@ -27,8 +27,9 @@
         .container {
             display: flex;
             min-height: 100vh;
-            align-items: center;
+            align-items: flex-start;
             padding: 20px;
+            padding-top: 80px;
             gap: 40px;
         }
 
@@ -36,7 +37,7 @@
             flex: 1;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
         }
 
         .video-container {
@@ -157,6 +158,7 @@
             .container {
                 flex-direction: column;
                 padding: 10px;
+                padding-top: 60px;
                 gap: 20px;
             }
 
@@ -194,10 +196,8 @@
     <div class="container">
         <div class="video-section">
             <div class="video-container">
-                <video controls>
-                    <source src="./img/masesic.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
+                <img src="./img/ffe2.png" alt="FFE Project"
+                    style="width: 100%; max-width: 600px; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
             </div>
         </div>
 
@@ -206,27 +206,29 @@
                 <a href="https://github.com/jagode67/masesic" target="_blank" class="github-link">
                     🔗 Ver código en GitHub
                 </a>
-                <h1 class="project-title">MasESIC</h1>
+                <h1 class="project-title">Fase de Formación en la Empresa</h1>
 
                 <div class="project-description">
-                    <p>MasEsic es una aplicación web progresiva (PWA) innovadora diseñada para mejorar la experiencia
-                        educativa en la Fundación ESIC. Esta plataforma permite a los estudiantes registrarse de manera
-                        sencilla en las diversas actividades y eventos organizados por la institución.</p>
+                    <p>FFE es una aplicación web que permite gestionar los alumnos que se van a la Formación en la
+                        Empresa. En ella
+                        se realiza la asignación de los alumnos a las empresas y a los tutores.
+                    </p>
 
-                    <p>La aplicación cuenta con un sistema de notificaciones push inteligente que mantiene a los
-                        usuarios informados sobre nuevas actividades, cambios de horario, recordatorios importantes y
-                        actualizaciones relevantes de sus eventos registrados.</p>
+                    <p>La parte mas importante de la aplicación es la generación de los documentos oficiales requeridos
+                        por la
+                        administración, para su firma por parte de la empresa, sin necesidad de cumplimentar plantillas
+                        de forma manual
+                    </p>
                 </div>
 
                 <ul class="project-features">
-                    <li>Aplicación Web Progresiva (PWA) para experiencia nativa</li>
+                    <li>Aplicación Web con un diseño moderno y responsive</li>
                     <li>Sistema de registro intuitivo para actividades</li>
-                    <li>Notificaciones push en tiempo real</li>
                     <li>Interfaz responsive optimizada para móviles</li>
                     <li>Gestión de perfil de usuario personalizado</li>
-                    <li>Calendario integrado de eventos</li>
-                    <li>Sistema de recordatorios automáticos</li>
-                    <li>Funcionalidad offline para acceso sin conexión</li>
+                    <li>Gestión de empresas, tutores y alumnos</li>
+                    <li>Asignaciones de empresas y tutores a los alumnos</li>
+                    <li>Generación de documentos oficiales</li>
                 </ul>
 
             </div>
