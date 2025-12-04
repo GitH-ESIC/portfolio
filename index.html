@@ -41,7 +41,7 @@
         }
 
         .header h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             color: #fff;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -122,6 +122,16 @@
             color: #666;
         }
 
+        .project-banner {
+            width: 100%;
+            background-color: #ff8c00;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
@@ -160,23 +170,25 @@
     <header class="header">
         <img src="./img/logo_ESIC_blanco.svg" alt="ESIC Logo" class="logo">
         <div class="header-text">
-            <h1>ESIC University</h1>
-            <p>UNIVERSITY WITH PURPOSE</p>
+            <h1>Grado de Informática, Ciclos Formativo de Desarrollo de Aplicaciones Multiplataforma y Web</h1>
+            <p> </p>
         </div>
     </header>
 
     <div class="container">
         <div class="bento-grid">
             <div class="project-card dobleAncho" onclick="window.location.href = 'masesic.html'">
+                <div class="project-banner">Alumnos de DAM-DAW 2023</div>
                 <div class="project-image" style="background-image: url('./img/masesic.png');">
                 </div>
                 <div class="project-content">
-                    <h3 class="project-title">MasESIC (DAM-DAW 2023)</h3>
+                    <h3 class="project-title">MasESIC</h3>
                     <p class="project-description">Aplicación PWA que permite a los estudiantes registrarse en las
                         actividades de la Fundación y reciben notificaciones sobre ellas.</p>
                 </div>
             </div>
             <div class="project-card dobleAlto" onclick="window.location.href = 'sot.html'">
+                <div class="project-banner">Javi Gómez 2023</div>
                 <div class="project-image" style="background-image: url('./img/sot.png');height: 550px;">
                 </div>
                 <div class="project-content">
@@ -186,6 +198,7 @@
                 </div>
             </div>
             <div class="project-card dobleAncho" onclick="window.location.href = 'ffe.html'">
+                <div class="project-banner">DAW 2025</div>
                 <div class="project-image" style="background-image: url('./img/ffe.png');">
                 </div>
                 <div class="project-content">
